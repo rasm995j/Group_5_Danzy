@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebApp</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="assets/css/style-homepage.css">
+    <link rel="stylesheet" href="assets/css/swipeshow.css">
+    <link rel="stylesheet" href="assets/css/hamburger-lib.css">
+</head>
+<body>
+    <header>
+        <button class="hamburger hamburger--collapse" id="burger-menu" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div id="dt-notify-wrapper" class="" onclick="document.getElementById('dt').style.display='block'">
+            <div id="dt-notify"></div>
+            <img src="assets/img/daily-notify.png" id="dt-notify-img" alt="Daily tasks notify icon">
+        </div>
+    </header>
+    <nav id="mySidenav" class="sidenav">
+        <a href="homepage.html" class="homebtn" id="homebtn"><img src="assets/img/home.png" alt="home-icon"></a>
+        <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+        <a href="profile.html" id="nav-item1" class="nav-items">Profile</a>
+        <a href="achievements.html" id="nav-item2" class="nav-items">Achievements</a>
+        <a href="" id="nav-item3" class="nav-items">Documents</a>
+        <a href="index.html" id="nav-item4" class="nav-items">Log Out</a>
+    </nav>
+    <main id="main">
+        <div class="my-gallery swipeshow">
+            <ul class="slides">
+                <li class="slide" id="item1">
+                    <a href="#">
+                        <section id="section1">
+                            <img src="assets/img/notebook.png" alt="notebook">
+                        </section>
+                    </a>
+                </li>
+                <li class="slide" id="item2">
+                    <a href="#">
+                        <section id="section2">
+                            <img src="assets/img/microphone.png" alt="record-sound">
+                        </section>
+                    </a>
+                </li>
+                <li class="slide" id="item3">
+                    <a href="camera.html">
+                        <section id="section3">
+                            <img src="assets/img/photo-camera.png" alt="capture-picture">
+                        </section>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <aside id="dt" style="display: none">
+            <div id="dt-wrapper">
+                <h2>Daily Tasks!</h2>
+                <p>Completing all daily tasks multiply days in a row,<br>will give bonus experience!</p>
+                <div class="dt-text-wrapper">
+                    <p>Share three recordings with friends.</p>
+                </div>
+                <img src="assets/img/star.png" alt="gold-start">
+                <div class="dt-text-wrapper">
+                    <p>Win THE SMART TULIP.</p>
+                </div>
+                <img src="assets/img/star.png" alt="gold-start">
+                <div class="dt-text-wrapper">
+                    <p>Make two recordings and translate them.</p>
+                </div>
+                <button id="dtBtn" onclick="document.getElementById('dt').style.display='none'">Next</button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/swipeshow.js"></script>
+    <script src="assets/js/intex-animations.js"></script>
+</body>
+</html>

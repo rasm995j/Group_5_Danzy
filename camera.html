@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset="UTF-8">
+    <title>WebApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style-camera.css">
+</head>
+<body>
+    <main id="camera">
+        <canvas id="camera--sensor" class="user"></canvas>
+        <video id="camera--view" class="user" autoplay playsinline></video>
+        <img src="//:0" alt="" id="camera--output" class="user">
+        <button id="camera--trigger"><img src="assets/img/takePicbtn.png" alt="Take Picture"></button>
+        <button id="toggle-camera"><img src="assets/img/camera-switch.png" alt="Switch Camera"></button>
+    </main>
+    <script src="assets/js/camera.js"></script>
+</body>
+</html>

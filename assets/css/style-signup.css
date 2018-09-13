@@ -1,0 +1,73 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to bottom right, #a63285, #faa42d); }
+
+* {
+  font-family: Arial, sans-serif; }
+
+p, button {
+  color: white; }
+
+main {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+#logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: calc(50% - 90px);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: 0 0 100px 15px rgba(64, 64, 63, 0.45);
+  background-image: linear-gradient(to bottom right, #f14f56 10%, #af347e 90%); }
+
+#logo {
+  width: 120px;
+  height: auto; }
+
+input {
+  margin-left: -5px;
+  max-width: 22em;
+  width: 100%;
+  height: 3.5em;
+  background-color: rgba(206, 206, 206, 0.7);
+  border-radius: 14px 14px;
+  box-shadow: 0 0 50px 1px rgba(64, 64, 63, 0.7);
+  border: none;
+  padding: 0 0 0 15px;
+  font-size: 14px;
+  color: white; }
+
+p {
+  position: relative;
+  margin: 20px 0 5px 30px;
+  z-index: 10;
+  font-size: 1.3em; }
+
+button {
+  margin: 20px 0 0 -10px;
+  position: relative;
+  left: calc(50% - 3em);
+  width: 6em;
+  height: 2em;
+  border: none;
+  border-radius: 15px 15px;
+  background-color: #a53086;
+  font-size: 24px;
+  box-shadow: 0 0 50px 1px rgba(64, 64, 63, 0.7);
+  cursor: pointer; }
+
+/*# sourceMappingURL=style-signup.css.map */

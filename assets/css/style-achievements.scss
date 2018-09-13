@@ -1,0 +1,153 @@
+a, h1, h2, span {
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to right, #5a47b4, #298e8e);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 25% 0 0 0;
+}
+
+.hamburger {
+  margin: 20px 0 0 20px !important;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #5d8ea4, #3d6275);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 120px;
+}
+
+.sidenav a {
+  padding: 45px 8px 45px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .nav-items:hover {
+
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .homebtn {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 36px;
+  margin-right: 50px;
+  opacity: 0;
+  transition: ease 1.5s;
+}
+
+#mySidenav {
+  z-index: 11;
+}
+
+.nav-items {
+  transition: ease 0.25s;
+}
+
+#nav-item1, #nav-item3 {
+  background-image: linear-gradient(to right, #554288, #3aaaba);
+}
+
+#nav-item1:hover, #nav-item3:hover {
+  background-image: linear-gradient(to right, #45376f, #2d8494);
+}
+
+#nav-item2, #nav-item4 {
+  background-image: linear-gradient(to left, #554288, #3aaaba);
+}
+
+#nav-item2:hover, #nav-item4:hover {
+  background-image: linear-gradient(to left, #45376f, #2d8494);
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: #fff !important;
+}
+
+span {
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+#ac-items-wrapper {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.ac-lines {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.ac-items {
+  padding-top: 5px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.ac-items-img:hover {
+  box-shadow: 0 0 20px 1px #ffffff;
+}
+
+.earned {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.not-earned {
+  opacity: 0.7;
+  filter: grayscale(90%);
+}
+
+.ac-items-img {
+  width: 90%;
+  height: auto;
+
+
+  border-radius: 50%;
+}
